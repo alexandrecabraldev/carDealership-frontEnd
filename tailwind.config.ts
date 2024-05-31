@@ -13,7 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
+      backgroundColor:{
+        "black": "var(--black)"
+      },
+      fill: {
+        "black": "#000"
+      },
+      maxWidth:{
+        "80percent": "80%"
+      },
+      textColor:{
+        'black': '#000'
+      }
+    }
   },
   plugins: [],
 };

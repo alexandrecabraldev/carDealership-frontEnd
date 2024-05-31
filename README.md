@@ -1,10 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Avaliador Verzel
+
+Decidi manter o frontend e o backend em projetos diferentes, pois como passei a maior parte do tempo no backend, ele pode ser testado sozinho, já o front como depende do back não pode, além do mais o frontend ficou muito feio pois faltou tempo para acrescentar mais funcionalidades e para melhorar a estética, peço perdão por isso. 
+
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
 yarn dev
@@ -20,14 +25,59 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Visão Geral do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+Este frontend se comunica com um backend desenvolvido em Flask e PostgreSQL para listar, criar e gerenciar informações de carros. Inclui autenticação de usuários e permite a criação de novos usuários e carros.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Listagem de carros com todas as informações disponíveis
+- Autenticação de usuários (login e criação de contas)
+- Adição de novos carros ao sistema
+
+## Rotas Principais
+
+### `/`
+
+- **Descrição:** Página inicial onde todos os carros são listados com todas as suas informações obtidas do backend.
+- **Componentes:** Carros, Informações detalhadas
+
+### `/login`
+
+- **Descrição:** Página de login onde o usuário deve fornecer seu e-mail e senha para acessar o sistema.
+- **Componentes:** Formulário de login
+- **Funcionalidades:** Link para a criação de uma nova conta, redirecionando para `/account`.
+
+### `/account`
+
+- **Descrição:** Página para criar uma nova conta de usuário.
+- **Componentes:** Formulário de criação de conta
+- **Navegação:** Acessível a partir da página de login
+
+### `/register`
+
+- **Descrição:** Página para criar um novo automóvel no banco de dados.
+- **Componentes:** Formulário de registro de automóvel
+
+## Configuração e Instalação
+
+### Pré-requisitos
+
+Certifique-se de ter o Node.js e o npm instalados em seu sistema.
+
+### Passos para Instalação
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/alexandrecabraldev/carDealership-frontEnd.git
+  
+
+### Observação
+
+Esse app foi desenvolvido para funcionar em conjunto com seu respectivo backend, ele sozinho não contém qualquer funcionalidade, pois depende quase inteiramente de informações vindas da API.
+
+Pra quem usa o vscode pode ser necessário instalar a extenção postcss.
 
 ## Deploy on Vercel
 

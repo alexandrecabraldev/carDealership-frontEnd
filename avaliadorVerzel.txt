@@ -1,0 +1,1 @@
+Decidi manter o frontend e o backend em projetos diferentes, pois como passei a maior parte do tempo no backend, ele pode ser testado sozinho, já o front como depende do back não pode, além do mais o frontend ficou muito feio pois faltou tempo para acrescentar mais funcionalidades e para melhorar a estética, peço perdão por isso. 
